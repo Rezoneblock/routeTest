@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  outline: none;
+  font-family: 'OpenSans-Regular', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section__title {
+  font-family: 'OpenSans-Light', sans-serif;
+  max-width: 470px;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 57.6px;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.section__title--light {
+  color: #ffffff;
+}
+
+.section__description {
+  max-width: 360px;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #555555;
+}
+
+.main {
+  background-image: url("../img/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 550px;
+  background-position: 0 550px;
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+.main__title-block {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 260px;
+}
+
+.main__logo-img {
+  position: absolute;
+  top: 150px;
+  right: -178px;
+}
+
+.main__faucibus__list {
+  margin-top: 69px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.main__faucibus__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 485px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2), 0px 0px 32px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2), 0px 0px 32px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.main__faucibus__img {
+  width: 200px;
+}
+
+.main__faucibus__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: disc;
+  padding: 20px 32px;
+}
+
+.main__faucibus__description__list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: disc;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
+.main__faucibus__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38.4px;
+  color: #555555;
+}
+
+.main__faucibus__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #555555;
+}
+
+.main__footer {
+  max-width: 460px;
+  margin-top: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 75%;
+  }
+  .main {
+    background-image: url("../img/main-bg-800px.png");
+    background-position: 0 1035px;
+    background-size: 100% 680px;
+  }
+  .main__logo-img {
+    max-width: 640px;
+    max-height: 640px;
+    top: 95px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .main__title-block {
+    padding-top: 800px;
+    padding-bottom: 187px;
+  }
+  .main__faucibus__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 54px;
+  }
+  .main__faucibus__item {
+    max-width: 100%;
+    width: 100%;
+  }
+  .main__faucibus__item:first-of-type {
+    margin-bottom: 26px;
+  }
+  .main__faucibus__description {
+    padding: 42px 32px;
+  }
+  .main__footer {
+    margin-top: 45px;
+  }
+  .section__title {
+    max-width: 100%;
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+  .section__description {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 90%;
+  }
+  .section__title {
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  .section__description {
+    font-size: 18px;
+    line-height: 21.6px;
+    opacity: 0.18;
+  }
+  .main {
+    background-image: url("../img/main-bg-320px.png");
+    background-position: 0px 664px;
+    background-size: 100% 1162px;
+  }
+  .main__logo-img {
+    max-width: 300px;
+    max-height: 300px;
+    top: 83px;
+  }
+  .main__title-block {
+    padding-top: 412px;
+    padding-bottom: 162px;
+  }
+  .main__faucibus__description {
+    padding: 11px 22px;
+    height: 40%;
+  }
+  .main__faucibus__description__list {
+    padding-bottom: 14px;
+  }
+  .main__faucibus__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 280px;
+    height: 490px;
+  }
+  .main__faucibus__img {
+    width: 100%;
+    height: 60%;
+  }
+  .main__faucibus__description {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

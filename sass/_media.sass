@@ -1,0 +1,76 @@
+@media screen and ( max-width: 1080px  )
+  .container
+    width: 75%
+  .main
+    background-image: url('../img/main-bg-800px.png')
+    background-position: 0 1035px
+    background-size: 100% 680px
+    &__logo-img
+      max-width: 640px
+      max-height: 640px
+      top: 95px
+      left: 50%
+      transform: translateX(-50%)
+    &__title-block
+      padding-top: 800px
+      padding-bottom: 187px
+    &__faucibus
+      &__list
+        flex-direction: column
+        align-items: center
+        margin-top: 54px
+      &__item
+        max-width: 100%
+        width: 100%
+        &:first-of-type
+          margin-bottom: 26px
+      &__description
+        padding: 42px 32px
+    &__footer
+      margin-top: 45px
+  .section
+    &__title
+      max-width: 100%
+      font-size: 44px
+      line-height: 52.8px
+    &__description
+      max-width: 100%
+      font-size: 18px
+      line-height: 21.6px
+@media screen and ( max-width: 650px  )
+  .container
+    width: 90%
+  .section
+    &__title
+      font-size: 28px
+      line-height: 33.6px
+    &__description
+      font-size: 18px
+      line-height: 21.6px
+      opacity: 0.18
+  .main
+    background-image: url('../img/main-bg-320px.png')
+    background-position: 0px 664px
+    background-size: 100% 1162px
+    &__logo-img
+      max-width: 300px
+      max-height: 300px
+      top: 83px
+    &__title-block
+      padding-top: 412px
+      padding-bottom: 162px
+    &__faucibus
+      &__description
+        padding: 11px 22px
+        height: 40%
+        &__list
+          padding-bottom: 14px
+      &__item
+        flex-direction: column
+        max-width: 280px
+        height: 490px
+      &__img
+        width: 100%
+        height: 60%
+      &__description
+        width: 100%
